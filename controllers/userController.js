@@ -56,3 +56,16 @@ const userTotal = async () =>
         res.status(500).json(err);
       });
     },
+
+    deleteUser(req, res){
+        User.findOneAndDelete({ _id: req.params.userId})
+        .then((user) => 
+        !user
+          ? res.status(404).json({ message: 'No user with that Id' })
+          : res.status(200).json('User has been deleted')
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+    },

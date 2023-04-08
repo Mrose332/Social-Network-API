@@ -32,3 +32,18 @@ createThought(req, res)
     Thought.create(req.body)
     .then((thought) => res.json(thought))
     .catch((err) => res.status(500).json(err));
+
+    
+updateThought(req, res)
+        Thought.findOneAndUpdate({ _id: req.params.thoughtId},
+          { $set: req.body })
+        .then((thought) => 
+        !thought
+          ? res.status(404).json({ message: 'No thought with that Id' })
+          : res.status(200).json('Thought has been updated')
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+    

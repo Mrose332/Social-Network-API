@@ -47,3 +47,15 @@ updateThought(req, res)
         res.status(500).json(err);
       });
     
+      deleteThought(req, res)
+        Thought.findOneAndDelete({ _id: req.params.thoughtId})
+        .then((thought) => 
+        !thought
+          ? res.status(404).json({ message: 'No thought with that Id' })
+          : res.status(200).json('Thought has been deleted')
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+    

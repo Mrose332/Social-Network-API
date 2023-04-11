@@ -18,6 +18,8 @@ This application utilizes MongoDB to store data for my social media application.
 
 To install this program, clone GitHub SSH below, use your terminal and enter "node index.js", this will initiate the main script. and then install dependencies by entering "NPM i" and then can update by adding users and thoughts
 
+git@github.com:Mrose332/Social-Network-API.git
+
 ## License
 Project is license under MIT
 
@@ -27,6 +29,8 @@ Project is license under MIT
 <img src="images/Screenshot.png">
 
 <a href=https://drive.google.com/file/d/1O_JBMYLN_KSbLN2dL9VXHNpbWQixKItE/view>Link to Video</a>
+
+
 
 ## Contributors
 

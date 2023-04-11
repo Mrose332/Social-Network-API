@@ -12,6 +12,7 @@ This application utilizes MongoDB to store data for my social media application.
  * [License](#license)
  * [Contributors](#contributors)
  * [Questions](#questions)
+ * [Refrences](#refrences)
     
 
 ## Installation
@@ -40,5 +41,9 @@ Mike Rosenzweig
 ## Questions
 
 Reach me for additional questions at: mailto:mrose332@gmail.com.
+
+## Refrences
+
+Refrenced GitLab MSU Course activities repo for NoSQL
 
 
